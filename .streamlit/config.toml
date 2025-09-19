@@ -1,24 +1,11 @@
-[global]
-
-# Streamlit sharing settings
-dataFrameSerialization = "legacy"
-
 [server]
-# Server settings
+# Server settings for Streamlit Cloud
+headless = true
 port = 8501
-address = "localhost"
-headless = false
-runOnSave = true
-allowRunOnSave = true
-
-# File watcher
-fileWatcherType = "auto"
 
 [browser]
 # Browser settings
 gatherUsageStats = false
-serverAddress = "localhost"
-serverPort = 8501
 
 [theme]
 # App theme
@@ -28,22 +15,10 @@ secondaryBackgroundColor = "#F0F2F6"
 textColor = "#262730"
 font = "sans serif"
 
-[client]
-# Client settings
-caching = true
-displayEnabled = true
-
 [runner]
 # Runner settings
 magicEnabled = true
-installTracer = false
-fixMatplotlib = true
 
 [logger]
 # Logging settings
 level = "info"
-messageFormat = "%(asctime)s.%(msecs)03d %(name)s: %(levelname)s: %(message)s"
-
-[deprecation]
-# Deprecation warnings
-showPyplotGlobalUse = false
